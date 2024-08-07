@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul.nav-right {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 1em;
+    border-radius: 30px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    height: 300px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Hero Section Styles */
+#hero {
+    background: url('images/solar-panels.PNG') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 10em 2em;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 1em 2em;
+    color: white;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the button */
+.hero-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+#home {
+    background-color: #fff;
+    padding: 5em 0;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#services {
+    background-color: #fff;
+}
+
+.service {
+    margin: 1em 0;
+}
+
+#contact {
+    background-color: white;
+    color: #333;
+    padding: 5em 2em;
+    text-align: center;
+}
+
+#cont {
+    background-image: url('images/solar-energy-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#cont-let {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.contact-info, .social-media, .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p, .social-media h2, .contact-form h2 {
+    margin-bottom: 1em;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the submit button */
+.contact-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+#about {
+    padding: 5em 2em;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about .container {
+    margin-bottom: 3em;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.value-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1em;
+    max-width: 300px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.value-item img {
+    width: 100%;
+    height: auto;
+}
+
+.value-item h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    padding: 0 1em;
+}
+
+.value-item p {
+    padding: 0 1em 1em;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1em;
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    padding: 0 1em;
+}
+
+.team-member p {
+    padding: 0 1em 1em;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin: 0 1em;
+}
+
+.social-media ul li a {
+    color: black;
+    font-size: 2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media ul li a:hover {
+    color: #ddd;
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
